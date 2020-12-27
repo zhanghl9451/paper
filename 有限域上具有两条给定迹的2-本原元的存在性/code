@@ -1,4 +1,4 @@
-n:=9;
+n:=9; //set the different values from n=8 to n=25;
 exceptions:=[];
 order:=0;
 for q:=3 to 1550 do 
@@ -23,7 +23,7 @@ numberprime:=#(PrimeDivisors);
 if numberprime eq 1 then
 print "(q,n)=(",q,n,"), q^n-1 is prime. so exception.";
 else
-wl:=2; //l prime number
+wl:=2; //the number of prime divisors of l
         delta:=1;
      	for  k:=wl+1 to numberprime   do
 	delta:=delta-2/(PrimeDivisors[k]);
